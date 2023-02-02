@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans';
+    
+    list-style: none;
+    font-size: 14px;
+    background: #1E90FF;
+}
+
+/*************************HEADER****************************/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 80px;
+    align-items: center;
+}
+
+header img{
+    width: 80px;
+    height: 90px;
+}
+
+nav{
+    display: flex;
+    gap: 40px;
+    text-transform: uppercase;
+
+    color: #9370DB;
+}
+
+nav a{
+    text-decoration: none;
+
+    font-size:  15px;
+}
+
+nav a:hover{
+    font-size: 20px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+}
+
+/************************* Background-Image ********************************/
+
+.main-section{
+    background-image: url(/img/earth.jpg);
+    background-size: cover;
+    min-height: 100vh;
+
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-section h1{
+    font-size: 30px;
+}
+
+.main-section h3{
+    font-size: 20px;
+}
+
+.main-section .btn{
+    background: none;
+    margin-top: 15px;
+
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid #00008B;
+    color: black;
+    border-radius: 10px;
+
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+@media (max-width:700px){
+    .main-section h1{
+        font-size: 22px;
+    }
+    .main-section h3{
+        font-size: 14px;
+    }
+}
+
+/*************Section sistema-solar*****************/
+
+.sistema-solar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center ;
+    gap: 8px;
+
+    padding: 50px 40px;
+}
+
+.sistema-solar h1{
+    font-size: 20px;
+}
+
+.sistema-solar li{
+    font-size: 16px;
+
+    list-style: none;
+}
+
+.sistema-solar hr{
+    width: 255px;
+    height: 3px;
+    background-color: #00008B;
+    border: none;
+
+    margin-block: 20px;
+}
+
+.sistema-solar .sun{
+    width: 100%;
+
+    margin-top: 10px;
+
+    display: flex;
+}
+
+.sistema-solar .sun li{
+    height: 300px;
+    margin-inline: auto;
+
+    background-position: center;
+    background-size: cover;
+
+    list-style: none;
+
+    flex-basis: 45%;
+
+    transition: all 1s;
+}
+
+.sistema-solar .sun li:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+@media(max-width:700px){
+    .sistema-solar .sun li.large{
+        flex-basis: 100%;
+    }
+}
+
+/*************Section Planets*************/
+
+.section-planets{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+
+    padding: 0 35px 35px ;
+}
+
+.section-planets h3{
+    font-size: 20px;
+}
+
+.section-planets p{
+    font-size: 16px;
+}
+
+.section-planets hr{
+    width: 255px;
+    height: 3px;
+    background-color: #00008B;
+    border: none;
+
+    margin-block: 20px;
+}
+
+.section-planets .planets{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-planets .planets li{
+    height: 300px;
+    padding: 10px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+
+    list-style: none;
+}
+
+
+.section-planets .planets li.small{
+    flex-basis: 25%;
+}
+
+.section-planets .planets li {
+    transition: all 2s;
+}
+
+.section-planets .planets li:hover{
+    transition:  1.5s;
+    transform: scale(1.1);
+}
+
+@media (max-width:700px){
+    .section-planets .planets li.small{
+        flex-basis: 100%;
+    }
+}
+
+/************FOOTER**************/
+
+footer{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 10px;
+
+    padding-bottom: 30px;
+}
+
+footer hr{
+    width: 255px;
+    height: 2px;
+    border: none;
+    background-color: #00008B;
+
+    margin-block: 20px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    list-style: none;
+}
+
+footer img{
+    width: 60px;
+    height: 60px;
+
+    transition: all 1s;
+}
+
+footer img:hover{
+    transition: 1s;
+    transform: scale(1.5);
+}
+
+footer p{
+    font-size: 18px;
+}
+
+
+
